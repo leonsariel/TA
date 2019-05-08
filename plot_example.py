@@ -3,12 +3,15 @@ import pandas as pd
 import numpy as np
 import matplotlib.ticker as mticker
 import matplotlib.pyplot as plt
-import datetime
 from mpl_finance import candlestick_ohlc
 import matplotlib.dates as mdates
+from matplotlib.widgets import Cursor
+from mpldatacursor import datacursor
 
-data = pd.read_csv('short.csv')
+
+data = pd.read_csv('EURUSD.csv')
 data = data.set_index(pd.to_datetime(data['Date'].apply(str) + ' ' + data['Timestamp']))
+data = data[1000:1300]
 
 # data preprocessing
 del data['Date']
@@ -19,17 +22,58 @@ high = data["High"].values
 low = data["Low"].values
 close = data["Close"].values
 
+data["rsi14"] = ta.RSI(close, timeperiod=14)
+data["rsi20"] = ta.RSI(close, timeperiod=20)
+
+# moving average
+data["sma20"] = ta.SMA(close, timeperiod=20)
+data["sma30"] = ta.SMA(close, timeperiod=30)
+data["sma50"] = ta.SMA(close, timeperiod=50)
 
 # Converting date to pandas datetime format
 data['Date'] = pd.to_datetime(data.index)
 data["Date"] = data["Date"].apply(mdates.date2num)
 ohlc = data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
 
-f1, ax = plt.subplots(figsize=(10, 5))
 
-# plot the candlesticks
-candlestick_ohlc(ax, ohlc.values, width=.005, colorup='green', colordown='red')
-ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
+fig = plt.figure()
 
-# In case you dont want to save image but just displya it
+# add cross line for censor
+ax = fig.add_subplot(111, facecolor='#FFFFCC')
+cursor = Cursor(ax, useblit=True, color='red', linewidth=1)
+
+ax1 = fig.add_subplot(311)
+ax2 = fig.add_subplot(312)
+ax3 = fig.add_subplot(313)
+
+
+candle = candlestick_ohlc(ax1, ohlc.values, width=.005, colorup='green', colordown='red')
+ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
+
+
+
+
+horiz_line_data_20 = np.array([30 for i in range(len(data))])
+ax2.plot(data.index, horiz_line_data_20)
+
+horiz_line_data_80 = np.array([70 for i in range(len(data))])
+ax2.plot(data.index, horiz_line_data_80)
+
+rsi14 = ax2.plot(data.index,data["rsi14"])
+rsi20 = ax2.plot(data.index,data["rsi20"])
+datacursor(rsi14)
+
+
+
+
+ax3.plot(data.index, horiz_line_data_20)
+ax3.plot(data.index, horiz_line_data_80)
+
+rsi20 = ax3.plot(data.index,data["rsi20"])
+datacursor(rsi20)
+
+
+
+
+
 plt.show()
