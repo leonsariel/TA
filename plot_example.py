@@ -11,7 +11,7 @@ from mpldatacursor import datacursor
 
 data = pd.read_csv('EURUSD.csv')
 data = data.set_index(pd.to_datetime(data['Date'].apply(str) + ' ' + data['Timestamp']))
-data = data[1000:1300]
+data = data[300:750]
 
 # data preprocessing
 del data['Date']
@@ -49,7 +49,9 @@ ax3 = fig.add_subplot(313)
 
 candle = candlestick_ohlc(ax1, ohlc.values, width=.005, colorup='green', colordown='red')
 ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
-
+sma20 = ax1.plot(data.index,data["sma20"])
+sma30 = ax1.plot(data.index,data["sma30"])
+sma50 = ax1.plot(data.index,data["sma50"])
 
 
 
