@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e96e857f-379a-4549-8eee-08531589e57d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all.csv" beforeDir="false" afterPath="$PROJECT_DIR$/all.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rsi_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/rsi_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sell.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sell.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rsi_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="47" column="109" lean-forward="true" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
+            <state relative-caret-position="320">
+              <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -51,6 +50,8 @@
       <find>rsi14</find>
       <find>rsi_touch_point</find>
       <find>ris</find>
+      <find>0.0003</find>
+      <find>20</find>
     </findStrings>
     <replaceStrings>
       <replace>temp_data</replace>
@@ -68,6 +69,7 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/plot_example.py" />
         <option value="$PROJECT_DIR$/example.py" />
+        <option value="$PROJECT_DIR$/rsi_analysis.py" />
       </list>
     </option>
   </component>
@@ -103,6 +105,11 @@
               <item name="TA" type="b2602c69:ProjectViewProjectNode" />
               <item name="TA" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TA" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -127,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.example">
+  <component name="RunManager" selected="Python.rsi_analysis">
     <configuration name="Users" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,6 +198,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rsi_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rsi_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,27 +232,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Leon\Desktop\TA\backtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,18 +264,18 @@
     <list>
       <item itemvalue="Python.Users" />
       <item itemvalue="Python.example" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.plot_example" />
       <item itemvalue="Python.test_mpl" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.rsi_analysis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.rsi_analysis" />
         <item itemvalue="Python.example" />
         <item itemvalue="Python.plot_example" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test_mpl" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +313,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20547946" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20547946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -319,7 +326,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.28277355" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32961932" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.3954496" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.40303358" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -416,10 +423,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/EURUSD.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2366335" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rsi_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="47" column="109" lean-forward="true" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
+        <state relative-caret-position="320">
+          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

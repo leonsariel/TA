@@ -24,7 +24,7 @@ data["min"] = ta.MIN(close, timeperiod=10)
 data['max_shift'] = data["max"].shift(-10)
 data["min_shift"] = data["min"].shift(-10)
 
-data["rsi"] = ta.RSI(close, timeperiod=20)
+data["rsi"] = ta.RSI(close, timeperiod=14)
 data["sma_10"] = ta.SMA(close, timeperiod=10)
 rsi = data["rsi"]
 
@@ -40,14 +40,21 @@ data["rsi_sell"] = np.where(
 data["rsi_buy"] = np.where(
     ((previous_rsi <= 30) & (data["rsi_touch_point"] == 1)), 1, 0)
 
-print("total sell signal: ", list(data["rsi_sell"]).count(-1))
-print("total buy signal: ", list(data["rsi_buy"]).count(1))
+total_sell = list(data["rsi_sell"]).count(-1)
+total_buy = list(data["rsi_buy"]).count(1)
+print("total sell signal: ", total_sell)
+print("total buy signal: ", total_buy)
 
 data["sma_shift"] = data["sma_10"].shift(-10)
 
-a = data[(data.rsi_touch_point == 1) & (data.Close - data["min_shift"] > 0.0003) & (data.previous_rsi >= 70)]
+a = data[(data.rsi_touch_point == 1) & (data.Close - data["min_shift"] > 0.0005) & (data.previous_rsi >= 70)]
+b = data[(data.rsi_touch_point == 1) & (data["max_shift"] - data.Close > 0.0005) & (data.previous_rsi <= 30)]
 
-b = data[(data.rsi_touch_point == 1) & (data["max_shift"] - data.Close > 0.0003) & (data.previous_rsi <= 30)]
+a_count = len(a)
+b_count = len(b)
+
+
+print("rate is: ",(a_count+b_count)/(total_buy+total_sell))
 
 a.to_csv("sell.csv")
 data.to_csv("all.csv")
