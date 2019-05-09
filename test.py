@@ -7,24 +7,25 @@ freqs = np.arange(2, 20, 3)
 fig, ax = plt.subplots()
 plt.subplots_adjust(bottom=0.2)
 t = np.arange(0.0, 1.0, 0.001)
-s = np.sin(2*np.pi*freqs[0]*t)
+s = np.sin(2 * np.pi * freqs[0] * t)
 l, = plt.plot(t, s, lw=2)
 
 
-class Index(object):
-    def yes(self, event):
-        plt.close()
-        return 1
-    def no(self, event):
-        plt.close()
-        return -1
+def yes(self, event):
+    data[data.index = index, "result"] = 1
+    plt.close()
 
-callback = Index()
+
+def no(self, event):
+    data[data.index = index, "result"] = -1
+    plt.close()
+
+
 axprev = plt.axes([0.7, 0.05, 0.1, 0.075])
 axnext = plt.axes([0.81, 0.05, 0.1, 0.075])
-bnext = Button(axnext, 'Next')
-a = bnext.on_clicked(callback.yes)
-bprev = Button(axprev, 'Previous')
-bprev.on_clicked(callback.no)
+bnext = Button(axnext, 'Yes')
+a = bnext.on_clicked(yes)
+bprev = Button(axprev, 'No')
+bprev.on_clicked(no)
 
 plt.show()

@@ -9,8 +9,10 @@ from matplotlib.widgets import Cursor
 from mpldatacursor import datacursor
 from datetime import datetime
 from datetime import timedelta
+from matplotlib.widgets import Button
 
-data = pd.read_csv('EURUSD.csv')
+
+data = pd.read_csv('data/EURUSD.csv')
 data = data.set_index(pd.to_datetime(data['Date'].apply(str) + ' ' + data['Timestamp']))
 data = data[:10000]
 
@@ -61,6 +63,24 @@ data["rsi_buy"] = np.where(
 data['result'] = 0
 
 
+
+def yes(event):
+    data[index, "result"] = 1
+    plt.close()
+
+
+def no(event):
+    data[index, "result"] = -1
+    plt.close()
+
+def exit_chart(event):
+    data[index, "result"] = -100
+    plt.close()
+
+
+
+
+
 count = 1
 for index, row in data.iterrows():
     if count > 100 and count < (len(data) - 100):
@@ -109,18 +129,35 @@ for index, row in data.iterrows():
             print(row.rsi14)
             print(row.previous_rsi)
 
+            ax_no = plt.axes([0.61, 0.05, 0.1, 0.075])
+            b_no = Button(ax_no, 'No')
+            b_no.on_clicked(no)
+
+            ax_yes = plt.axes([0.5, 0.05, 0.1, 0.075])
+            b_yes = Button(ax_yes, 'Yes')
+            a = b_yes.on_clicked(yes)
+
+            ax_exit = plt.axes([0.8, 0.05, 0.1, 0.075])
+            b_exit = Button(ax_exit, 'exit')
+            a = b_yes.on_clicked(exit_chart)
+            print(a)
+
+
+
             plt.show()
-            a = input("Can rsi earn positive return? y/n or exit...")
-            a = a.lower()
-            if a=="y":
-                data.loc[data.index == index, 'result'] = 1
-            elif a=="n":
-                data.loc[data.index == index, 'result'] = -1
-            elif a=="exit":
+
+            if data[data.index==index]["result"].value == -100:
                 break
+            # a = input("Can rsi earn positive return? y/n or exit...")
+            # a = a.lower()
+            # if a=="y":
+            #     data.loc[data.index == index, 'result'] = 1
+            # elif a=="n":
+            #     data.loc[data.index == index, 'result'] = -1
+            # elif a=="exit":
+            #     break
 
     else:
         count += 1
-
 
 data.to_csv("res.csv")
