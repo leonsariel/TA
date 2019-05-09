@@ -26,7 +26,7 @@ previous_rsi = rsi.shift()
 next_rsi = rsi.shift(-1)
 
 data["rsi_touch_point"] = np.where(
-    ((previous_rsi >= 70) & (rsi <= 70)) | ((previous_rsi <= 30) & (rsi < 30)), 1, 0)
+    ((previous_rsi >= 70) & (rsi <= 70)) | ((previous_rsi <= 30) & (rsi > 30)), 1, 0)
 
 data["rsi_sell"] = np.where(
     ((previous_rsi >= 70) & (data["rsi_touch_point"] == 1)), -1, 0)
@@ -42,15 +42,9 @@ print("total buy signal: ", list(data["rsi_buy"]).count(1))
 # print(list(data["rsi_touch_point"]).count(0))
 
 # print(data["sma_10"])
-a = data[(data.rsi_touch_point == 1) & (data.Close - data.sma_10 > 0.0003) & (data.rsi14.shift() >= 70)]
-b = data[(data.rsi_touch_point == 1) & (data.sma_10 - data.Close > 0.0003) & (data.rsi14.shift() <= 30)]
+a = data[(data.rsi_touch_point == 1) & (data.Close - data.sma_10.shift() > 0.0003) & (data.rsi14.shift() >= 70)]
+b = data[(data.rsi_touch_point == 1) & (data.sma_10.shift() - data.Close > 0.0003) & (data.rsi14.shift() <= 30)]
 print(len(a))
 print(len(b))
 
-count = 0
-for index, row in data.iterrows():
-    # get data by row
 
-    if (row['rsi_touch_point'] > 0) and (row['Close'] > row['sma_10'] and (row['rsi_sell'] == -1)):
-        count += 1
-# print("this is count",count)
