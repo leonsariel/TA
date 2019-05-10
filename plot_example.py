@@ -10,6 +10,11 @@ from mpldatacursor import datacursor
 from datetime import datetime
 from datetime import timedelta
 from matplotlib.widgets import Button
+import random
+
+
+import datetime
+
 
 
 data = pd.read_csv('data/EURUSD.csv')
@@ -44,11 +49,6 @@ next_rsi = rsi.shift(-1)
 data["previous_rsi"] = rsi.shift()
 data["next_rsi"] = rsi.shift(-1)
 
-print(data.rsi14.tail())
-print(next_rsi.tail())
-print(previous_rsi.tail())
-
-
 data["rsi_touch_point"] = np.where(
     ((previous_rsi > 70) & (rsi <= 70)) | ((previous_rsi < 30) & (rsi >= 30)), 1, 0)
 
@@ -63,28 +63,43 @@ data["rsi_buy"] = np.where(
 data['result'] = 0
 
 
-
 def yes(event):
-    data[index, "result"] = 1
+    a = random.randint(1,1000)
+    currentDT = datetime.datetime.now()
+    name = str(currentDT)
+    name = name[-6:-1]
+    plt.savefig("yes/{}.png".format(name+ str(a)))
+    global result
+    result = 1
     plt.close()
 
 
 def no(event):
-    data[index, "result"] = -1
+    # data[index, "result"] = -1
+    a = random.randint(1,1000)
+    currentDT = datetime.datetime.now()
+    name = str(currentDT)
+    name = name[-6:-1]
+    plt.savefig("no/{}.png".format(name+ str(a)))
+    global result
+    result = -1
     plt.close()
+
 
 def exit_chart(event):
-    data[index, "result"] = -100
+    global result
+    result = -100
     plt.close()
 
 
-
+def onclick(event):
+    return event.ydata
 
 
 count = 1
 for index, row in data.iterrows():
     if count > 100 and count < (len(data) - 100):
-        if row["rsi_buy"]!=0 or row["rsi_sell"]!=0:
+        if row["rsi_buy"] != 0 or row["rsi_sell"] != 0:
             previous_index = index + timedelta(minutes=-15 * 100)
             next_index = index + timedelta(minutes=15 * 100)
             temp_data = data[previous_index:next_index]
@@ -92,7 +107,7 @@ for index, row in data.iterrows():
 
             ohlc = temp_data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
 
-            fig = plt.figure(figsize=(15,7))
+            fig = plt.figure(figsize=(15, 7))
 
             # add cross line for censor
             ax = fig.add_subplot(111, facecolor='#FFFFCC')
@@ -101,12 +116,10 @@ for index, row in data.iterrows():
             ax1 = fig.add_subplot(211)
             ax2 = fig.add_subplot(212)
 
-
             plt.axvline(x=index)
 
             candle = candlestick_ohlc(ax1, ohlc.values, width=.005, colorup='green', colordown='red')
             ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
-
 
             ax1.axvline(index, color='k', linestyle='-.')
 
@@ -124,10 +137,7 @@ for index, row in data.iterrows():
             rsi20 = ax2.plot(temp_data.index, temp_data["rsi20"])
             datacursor(rsi14)
 
-
             datacursor(rsi20)
-            print(row.rsi14)
-            print(row.previous_rsi)
 
             ax_no = plt.axes([0.61, 0.05, 0.1, 0.075])
             b_no = Button(ax_no, 'No')
@@ -138,26 +148,20 @@ for index, row in data.iterrows():
             a = b_yes.on_clicked(yes)
 
             ax_exit = plt.axes([0.8, 0.05, 0.1, 0.075])
-            b_exit = Button(ax_exit, 'exit')
-            a = b_yes.on_clicked(exit_chart)
-            print(a)
+            b_exit = Button(ax_exit, 'Exit')
+            b_exit.on_clicked(exit_chart)
 
-
+            a = fig.canvas.mpl_connect('button_press_event', onclick)
 
             plt.show()
 
-            if data[data.index==index]["result"].value == -100:
+            if result != -100:
+                a = row.index
+                a = str(a)
+                row.result = result
+            else:
                 break
-            # a = input("Can rsi earn positive return? y/n or exit...")
-            # a = a.lower()
-            # if a=="y":
-            #     data.loc[data.index == index, 'result'] = 1
-            # elif a=="n":
-            #     data.loc[data.index == index, 'result'] = -1
-            # elif a=="exit":
-            #     break
-
     else:
         count += 1
 
-data.to_csv("res.csv")
+data.to_csv("result.csv")
