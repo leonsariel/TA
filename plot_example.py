@@ -11,8 +11,6 @@ from datetime import datetime
 from datetime import timedelta
 from matplotlib.widgets import Button
 import random
-
-
 import datetime
 
 
