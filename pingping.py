@@ -29,7 +29,7 @@ low = data["Low"].values
 close = data["Close"].values
 
 
-data["ema100"] = ta.EMA(close, timeperiod=100)
+# data["ema100"] = ta.EMA(close, timeperiod=100)
 
 # Converting date to pandas datetime format
 data['Date'] = pd.to_datetime(data.index)
@@ -37,18 +37,40 @@ data["Date"] = data["Date"].apply(mdates.date2num)
 ohlc = data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
 
 
+#
+# data["cross_over"] = np.where(
+#     ((low <= data["ema100"]) & (high >= data["ema100"])), 1, 0)
+#
+# data["sell"] = np.where(
+#     ((close >= open) & (data["cross_over"] == 1)), 1, 0)
+#
+# data["buy"] = np.where(
+#     ((close <= open) & (data["cross_over"] == 1)), 1, 0)
+#
+#
+# data['result'] = 0
 
-data["cross_over"] = np.where(
-    ((low <= data["ema100"]) & (high >= data["ema100"])), 1, 0)
 
-data["sell"] = np.where(
-    ((close >= open) & (data["cross_over"] == 1)), 1, 0)
-
-data["buy"] = np.where(
-    ((close <= open) & (data["cross_over"] == 1)), 1, 0)
+data["ma"] = ta.EMA(close, timeperiod=100)
+data["atr"] = ta.ATR(high, low, close, timeperiod=20)
+data["atr_up"] = data["ma"] + ta.ATR(high, low, close, timeperiod=20)
+data["atr_down"] = data["ma"] - ta.ATR(high, low, close, timeperiod=20)
+data.dropna()
 
 
-data['result'] = 0
+
+data["direction"] = np.where(((data["Low"] < data["ma"]) & (data["High"] < data["ma"])), -1,
+                             np.where(((data["Low"] > data["ma"]) & (data["High"] > data["ma"])), 1, 0))
+
+data["last_ma"] = data["ma"].shift(periods=1)
+
+# cross over point and chanrao is 0, consecutive not including crossover points
+data['consecutive'] = data.direction.groupby((data.direction != data.direction.shift()).cumsum()).transform(
+    'size') * data.direction
+
+data.direction.groupby((data.direction != data.direction.shift()))
+data.to_csv("data.csv")
+
 
 
 def yes(event):
@@ -152,5 +174,5 @@ def onclick(event):
 #     else:
 #         count += 1
 
-data.to_csv("result.csv")
+# data.to_csv("result.csv")
 

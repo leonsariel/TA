@@ -5,7 +5,7 @@ import talib as ta
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('data/EURUSD10year1h.csv')
+data = pd.read_csv('data/USDJPY1h.csv')
 data = data.set_index(pd.to_datetime(data['Time'].apply(str)))
 
 # data preprocessing
@@ -34,21 +34,21 @@ data['consecutive'] = data.direction.groupby((data.direction != data.direction.s
 
 data.direction.groupby((data.direction != data.direction.shift()))
 data.to_csv("data.csv")
-
-count = 1
-start_price = 0
-end_price = 0
-pre_consecutive = 0
-start_list = []
-end_list = []
-consecutive_list = []
-position = False
-for index, row in data.iterrows():
-    if row.consecutive != pre_consecutive and pre_consecutive >= 10 and position==False:
-        if row.direction == 0:
-            start_price = round(row.last_ma, 6)
-            position = True
-    end_price = round(row.last_ma, 6)
+#
+# count = 1
+# start_price = 0
+# end_price = 0
+# pre_consecutive = 0
+# start_list = []
+# end_list = []
+# consecutive_list = []
+# position = False
+# for index, row in data.iterrows():
+#     if row.consecutive != pre_consecutive and pre_consecutive >= 10 and position==False:
+#         if row.direction == 0:
+#             start_price = round(row.last_ma, 6)
+#             position = True
+#     end_price = round(row.last_ma, 6)
 
     #     consecutive_list.append(int(row.consecutive))
     #     start_list.append(start_price)
