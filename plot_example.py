@@ -17,7 +17,7 @@ import datetime
 
 
 
-data = pd.read_csv('data/EURUSD.csv')
+data = pd.read_csv('data/USDJPY1h.csv')
 data = data.set_index(pd.to_datetime(data['Date'].apply(str) + ' ' + data['Timestamp']))
 data = data[:10000]
 
@@ -58,7 +58,6 @@ data["rsi_sell"] = np.where(
 data["rsi_buy"] = np.where(
     ((previous_rsi <= 30) & (data["rsi_touch_point"] == 1)), 1, 0)
 
-# data.to_csv("hello.csv")
 
 data['result'] = 0
 
@@ -165,3 +164,4 @@ for index, row in data.iterrows():
         count += 1
 
 data.to_csv("result.csv")
+
