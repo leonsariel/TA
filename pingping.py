@@ -13,8 +13,6 @@ from matplotlib.widgets import Button
 import random
 import datetime
 
-
-
 data = pd.read_csv('data/USDJPY1h.csv')
 data = data.set_index(pd.to_datetime(data['Date'].apply(str) + ' ' + data['Timestamp']))
 data = data[:10000]
@@ -28,7 +26,6 @@ high = data["High"].values
 low = data["Low"].values
 close = data["Close"].values
 
-
 # data["ema100"] = ta.EMA(close, timeperiod=100)
 
 # Converting date to pandas datetime format
@@ -36,28 +33,11 @@ data['Date'] = pd.to_datetime(data.index)
 data["Date"] = data["Date"].apply(mdates.date2num)
 ohlc = data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
 
-
-#
-# data["cross_over"] = np.where(
-#     ((low <= data["ema100"]) & (high >= data["ema100"])), 1, 0)
-#
-# data["sell"] = np.where(
-#     ((close >= open) & (data["cross_over"] == 1)), 1, 0)
-#
-# data["buy"] = np.where(
-#     ((close <= open) & (data["cross_over"] == 1)), 1, 0)
-#
-#
-# data['result'] = 0
-
-
 data["ma"] = ta.EMA(close, timeperiod=100)
 data["atr"] = ta.ATR(high, low, close, timeperiod=20)
 data["atr_up"] = data["ma"] + ta.ATR(high, low, close, timeperiod=20)
 data["atr_down"] = data["ma"] - ta.ATR(high, low, close, timeperiod=20)
 data.dropna()
-
-
 
 data["direction"] = np.where(((data["Low"] < data["ma"]) & (data["High"] < data["ma"])), -1,
                              np.where(((data["Low"] > data["ma"]) & (data["High"] > data["ma"])), 1, 0))
@@ -68,17 +48,18 @@ data["last_ma"] = data["ma"].shift(periods=1)
 data['consecutive'] = data.direction.groupby((data.direction != data.direction.shift()).cumsum()).transform(
     'size') * data.direction
 
+data['previous_consecutive'] = data["consecutive"].shift(1)
+
 data.direction.groupby((data.direction != data.direction.shift()))
 data.to_csv("data.csv")
 
 
-
 def yes(event):
-    a = random.randint(1,1000)
+    a = random.randint(1, 1000)
     currentDT = datetime.datetime.now()
     name = str(currentDT)
     name = name[-6:-1]
-    plt.savefig("yes/{}.png".format(name+ str(a)))
+    plt.savefig("yes/{}.png".format(name + str(a)))
     global result
     result = 1
     plt.close()
@@ -86,11 +67,11 @@ def yes(event):
 
 def no(event):
     # data[index, "result"] = -1
-    a = random.randint(1,1000)
+    a = random.randint(1, 1000)
     currentDT = datetime.datetime.now()
     name = str(currentDT)
     name = name[-6:-1]
-    plt.savefig("no/{}.png".format(name+ str(a)))
+    plt.savefig("no/{}.png".format(name + str(a)))
     global result
     result = -1
     plt.close()
@@ -105,74 +86,72 @@ def exit_chart(event):
 def onclick(event):
     return event.ydata
 
+count = 1
+for index, row in data.iterrows():
+    if count > 100 and count < (len(data) - 100):
+        if row["consecutive"] == 0 and (row["previous_consecutive"]>=10 or row["previous_consecutive"]<=-10):
+            previous_index = index + timedelta(minutes=-60 * 200)
+            next_index = index + timedelta(minutes=60 * 200)
+            temp_data = data[previous_index:next_index]
+            count += 1
 
-# count = 1
-# for index, row in data.iterrows():
-#     if count > 100 and count < (len(data) - 100):
-#         if row["rsi_buy"] != 0 or row["rsi_sell"] != 0:
-#             previous_index = index + timedelta(minutes=-15 * 100)
-#             next_index = index + timedelta(minutes=15 * 100)
-#             temp_data = data[previous_index:next_index]
-#             count += 1
-#
-#             ohlc = temp_data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
-#
-#             fig = plt.figure(figsize=(15, 7))
-#
-#             # add cross line for censor
-#             ax = fig.add_subplot(111, facecolor='#FFFFCC')
-#             cursor = Cursor(ax, useblit=True, color='red', linewidth=1)
-#
-#             ax1 = fig.add_subplot(211)
-#             ax2 = fig.add_subplot(212)
-#
-#             plt.axvline(x=index)
-#
-#             candle = candlestick_ohlc(ax1, ohlc.values, width=.005, colorup='green', colordown='red')
-#             ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
-#
-#             ax1.axvline(index, color='k', linestyle='-.')
-#
-#             sma20 = ax1.plot(temp_data.index, temp_data["sma20"])
-#             sma30 = ax1.plot(temp_data.index, temp_data["sma30"])
-#             sma50 = ax1.plot(temp_data.index, temp_data["sma50"])
-#
-#             horiz_line_temp_data_20 = np.array([30 for i in range(len(temp_data))])
-#             ax2.plot(temp_data.index, horiz_line_temp_data_20)
-#
-#             horiz_line_temp_data_80 = np.array([70 for i in range(len(temp_data))])
-#             ax2.plot(temp_data.index, horiz_line_temp_data_80)
-#
-#             rsi14 = ax2.plot(temp_data.index, temp_data["rsi14"])
-#             rsi20 = ax2.plot(temp_data.index, temp_data["rsi20"])
-#             datacursor(rsi14)
-#
-#             datacursor(rsi20)
-#
-#             ax_no = plt.axes([0.61, 0.05, 0.1, 0.075])
-#             b_no = Button(ax_no, 'No')
-#             b_no.on_clicked(no)
-#
-#             ax_yes = plt.axes([0.5, 0.05, 0.1, 0.075])
-#             b_yes = Button(ax_yes, 'Yes')
-#             a = b_yes.on_clicked(yes)
-#
-#             ax_exit = plt.axes([0.8, 0.05, 0.1, 0.075])
-#             b_exit = Button(ax_exit, 'Exit')
-#             b_exit.on_clicked(exit_chart)
-#
-#             a = fig.canvas.mpl_connect('button_press_event', onclick)
-#
-#             plt.show()
-#
-#             if result != -100:
-#                 a = row.index
-#                 a = str(a)
-#                 row.result = result
-#             else:
-#                 break
-#     else:
-#         count += 1
+            ohlc = temp_data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
+
+            fig = plt.figure(figsize=(15, 7))
+
+            # add cross line for censor
+            ax = fig.add_subplot(111, facecolor='#FFFFCC')
+            cursor = Cursor(ax, useblit=True, color='red', linewidth=1)
+
+            ax1 = fig.add_subplot(111)
+
+
+            plt.axvline(x=index)
+
+            candle = candlestick_ohlc(ax1, ohlc.values, width=.005, colorup='green', colordown='red')
+            ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M:%S'))
+
+            ax1.axvline(index, color='k', linestyle='-.')
+
+            ema100 = ax1.plot(temp_data.index, temp_data["ma"])
+            # sma30 = ax1.plot(temp_data.index, temp_data["sma30"])
+            # sma50 = ax1.plot(temp_data.index, temp_data["sma50"])
+
+            # horiz_line_temp_data_20 = np.array([30 for i in range(len(temp_data))])
+            # ax2.plot(temp_data.index, horiz_line_temp_data_20)
+            #
+            # horiz_line_temp_data_80 = np.array([70 for i in range(len(temp_data))])
+            # ax2.plot(temp_data.index, horiz_line_temp_data_80)
+
+            # rsi14 = ax2.plot(temp_data.index, temp_data["rsi14"])
+            # rsi20 = ax2.plot(temp_data.index, temp_data["rsi20"])
+            # datacursor(rsi14)
+            #
+            # datacursor(rsi20)
+
+            ax_no = plt.axes([0.61, 0.05, 0.1, 0.075])
+            b_no = Button(ax_no, 'No')
+            b_no.on_clicked(no)
+
+            ax_yes = plt.axes([0.5, 0.05, 0.1, 0.075])
+            b_yes = Button(ax_yes, 'Yes')
+            a = b_yes.on_clicked(yes)
+
+            ax_exit = plt.axes([0.8, 0.05, 0.1, 0.075])
+            b_exit = Button(ax_exit, 'Exit')
+            b_exit.on_clicked(exit_chart)
+
+            a = fig.canvas.mpl_connect('button_press_event', onclick)
+
+            plt.show()
+
+            if result != -100:
+                a = row.index
+                a = str(a)
+                row.result = result
+            else:
+                break
+    else:
+        count += 1
 
 # data.to_csv("result.csv")
-
