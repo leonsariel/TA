@@ -5,13 +5,532 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e96e857f-379a-4549-8eee-08531589e57d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backtesting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/date_index_formatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multi_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pingping_save_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 04 20 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 04 22 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 04 23 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 04 27 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 04 29 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 05 05 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 05 07 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 05 08 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 05 12 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 05 15 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 05 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 02 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 04 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 08 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 10 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 11 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 12 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 15 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 16 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 17 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 17 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 25 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 06 26 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 01 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 02 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 06 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 10 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 21 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 22 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 28 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 29 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 07 31 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 03 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 05 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 07 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 10 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 12 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 13 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 14 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 17 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 19 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 08 27 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 01 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 03 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 08 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 10 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 11 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 14 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 15 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 15 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 17 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 17 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 21 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 23 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 28 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 29 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 09 30 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 01 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 02 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 06 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 08 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 09 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 12 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 16 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 22 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 27 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 28 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 28 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 10 30 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 02 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 03 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 12 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 12 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 13 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 16 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 19 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 23 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 23 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 25 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 27 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 27 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 11 30 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 01 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 01 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 03 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 04 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 08 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 15 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 16 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 18 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 30 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2015 12 30 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 04 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 08 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 12 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 13 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 14 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 19 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 21 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 26 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 27 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 01 29 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 02 02 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 02 15 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 02 16 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 02 22 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 02 25 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 02 29 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 01 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 02 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 03 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 04 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 09 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 10 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 15 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 16 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 16 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 22 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 03 29 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 12 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 14 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 15 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 18 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 20 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 22 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 04 28 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 04 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 06 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 06 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 12 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 13 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 17 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 23 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 24 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 26 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 05 31 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 06 10 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 06 10 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 06 21 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 06 22 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 06 24 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 06 29 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 07 04 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 07 08 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 07 11 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 07 21 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 07 27 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 07 28 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 05 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 09 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 11 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 12 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 17 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 22 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 24 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 25 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 08 26 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 02 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 05 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 06 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 08 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 12 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 13 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 14 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 16 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 21 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 27 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 28 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 09 29 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 07 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 11 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 13 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 14 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 17 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 20 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 21 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 26 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 10 28 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 11 01 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 11 09 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 11 09 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 11 28 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 11 29 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 02 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 07 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 08 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 14 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 19 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 21 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 22 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 27 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 28 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2016 12 30 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 03 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 04 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 06 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 09 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 11 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 13 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 18 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 20 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 24 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 26 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 01 30 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 01 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 03 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 08 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 09 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 14 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 16 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 21 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 22 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 02 27 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 01 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 06 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 07 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 08 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 13 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 14 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 28 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 29 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 03 31 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 05 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 06 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 07 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 10 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 18 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 19 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 04 21 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 05 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 11 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 12 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 15 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 23 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 24 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 05 31 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 01 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 02 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 08 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 09 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 13 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 15 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 21 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 22 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 23 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 06 29 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 06 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 11 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 14 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 20 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 25 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 26 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 07 27 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 02 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 04 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 08 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 14 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 16 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 17 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 23 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 24 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 25 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 28 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 08 29 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 01 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 05 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 06 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 11 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 15 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 20 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 22 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 25 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 26 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 09 28 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 02 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 04 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 04 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 06 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 09 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 11 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 16 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 19 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 25 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 27 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 10 31 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 02 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 02 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 03 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 06 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 07 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 09 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 13 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 13 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 16 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 20 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 11 28 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 01 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 06 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 06 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 13 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 18 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 19 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2017 12 26 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 03 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 08 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 09 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 17 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 18 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 22 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 31 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 01 31 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 05 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 06 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 07 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 09 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 20 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 22 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 23 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 26 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 26 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 02 28 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 01 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 05 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 07 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 12 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 12 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 13 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 15 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 16 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 19 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 21 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 26 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 03 27 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 02 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 03 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 04 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 06 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 09 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 11 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 16 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 17 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 18 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 04 19 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 05 03 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 05 07 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 05 08 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 05 10 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 05 23 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 01 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 07 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 11 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 14 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 18 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 18 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 20 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 21 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 25 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 26 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 27 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 06 28 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 03 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 05 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 09 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 11 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 19 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 27 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 30 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 07 31 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 01 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 02 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 03 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 06 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 07 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 10 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 13 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 14 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 15 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 16 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 21 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 27 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 27 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 28 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 08 30 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 03 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 06 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 07 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 12 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 18 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 20 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 09 26 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 02 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 04 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 08 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 16 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 18 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 22 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 23 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 23 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 25 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 10 29 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 01 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 07 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 12 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 13 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 15 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 21 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 24 00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 28 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 11 29 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 12 05 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 12 10 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 12 14 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 12 26 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2018 12 27 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 07 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 09 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 10 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 11 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 15 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 22 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 23 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 24 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 25 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 29 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 01 30 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 01 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 06 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 07 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 14 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 15 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 19 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 20 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 22 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 26 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 27 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 02 28 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 03 06 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 03 12 02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 03 15 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 03 19 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 03 20 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 03 26 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 04 08 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 04 11 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 04 18 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 04 19 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 04 26 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 04 29 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 01 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 15 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 16 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 17 06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 20 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 23 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 29 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 05 30 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 05 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 06 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 07 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 10 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 11 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 14 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 18 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 18 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 26 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 06 28 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 02 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 05 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 10 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 11 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 16 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 17 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 19 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 24 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 25 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 30 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 07 31 03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 01 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 06 07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 13 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 14 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 20 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 21 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 22 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 23 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 26 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 27 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 28 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 08 30 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 09 04 09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 09 19 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 09 20 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 09 24 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 09 25 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 09 30 08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 01 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 07 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 08 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 10 01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 17 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 18 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 21 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 22 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 23 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 24 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 25 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 29 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 10 30 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 04 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 07 04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 11 05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 12 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 15 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 18 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/no/2019 11 19 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pingping.py" beforeDir="false" afterPath="$PROJECT_DIR$/pingping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmaCross.html" beforeDir="false" afterPath="$PROJECT_DIR$/SmaCross.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +541,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backtesting.py">
+        <entry file="file://$PROJECT_DIR$/back_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="304">
+              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -34,13 +553,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pingping.py">
+        <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/backtesting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="26" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="191">
+              <caret line="682" selection-start-line="682" selection-end-line="682" />
             </state>
           </provider>
         </entry>
@@ -59,7 +575,6 @@
       <find>apple</find>
       <find>f1</find>
       <find>count</find>
-      <find>data</find>
       <find>figure</find>
       <find>rsi_sell</find>
       <find>index</find>
@@ -80,11 +595,17 @@
       <find>candlestick</find>
       <find>ver</find>
       <find>eurusd</find>
+      <find>high</find>
+      <find>sl</find>
+      <find>set_sl</find>
+      <find>data</find>
+      <find>atr</find>
     </findStrings>
     <replaceStrings>
       <replace>temp_data</replace>
       <replace>ris</replace>
       <replace>rsi</replace>
+      <replace>df</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\leons\Desktop\TA</dir>
@@ -108,12 +629,15 @@
         <option value="$PROJECT_DIR$/pingping.py" />
         <option value="$PROJECT_DIR$/pingping_save_image.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/test/__init__.py" />
+        <option value="$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/_util.py" />
+        <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/back_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1825" />
-    <option name="y" value="-8" />
+    <option name="x" value="1744" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -174,7 +698,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.back_test">
     <configuration name="Users" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,6 +712,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="Users" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="back_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/back_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backtesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backtesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,69 +783,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pingping" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pingping.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pingping2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pingping2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pingping_save_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pingping_save_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -292,7 +795,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\leons\Desktop\TA\backtesting.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\leons\Desktop\TA\back_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,18 +828,18 @@
     <list>
       <item itemvalue="Python.Users" />
       <item itemvalue="Python.multi_client" />
-      <item itemvalue="Python.pingping2" />
-      <item itemvalue="Python.pingping" />
-      <item itemvalue="Python.pingping_save_image" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.backtesting" />
+      <item itemvalue="Python.back_test" />
+      <item itemvalue="Python.test2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.back_test" />
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.backtesting" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.multi_client" />
-        <item itemvalue="Python.pingping_save_image" />
-        <item itemvalue="Python.pingping" />
-        <item itemvalue="Python.pingping2" />
       </list>
     </recent_temporary>
   </component>
@@ -357,10 +881,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1512118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1512118" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -373,7 +897,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.38720173" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3286432" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.4175705" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.44577006" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -412,17 +936,6 @@
     <entry file="file://$PROJECT_DIR$/sell.csv" />
     <entry file="file://$PROJECT_DIR$/all.csv" />
     <entry file="file://$PROJECT_DIR$/buy.csv" />
-    <entry file="file://$PROJECT_DIR$/backtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/pandas/core/generic.py" />
     <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/pandas/core/indexing.py" />
     <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/pandas/core/common.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
@@ -550,27 +1063,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#420#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="5066" selection-start-line="5066" selection-end-line="5066" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="456">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#38#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pingping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="182">
+          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backtesting.py">
+    <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="369">
+          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/ta/Lib/site-packages/backtesting/backtesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="682" selection-start-line="682" selection-end-line="682" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
