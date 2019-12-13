@@ -35,8 +35,8 @@ ohlc = data[['Date', 'Open', 'High', 'Low', 'Close']].copy()
 
 data["ma"] = ta.EMA(close, timeperiod=100)
 data["atr"] = ta.ATR(high, low, close, timeperiod=20)
-data["atr_up"] = data["ma"] + ta.ATR(high, low, close, timeperiod=20)
-data["atr_down"] = data["ma"] - ta.ATR(high, low, close, timeperiod=20)
+data["atr_up"] = data["ma"] + 2*ta.ATR(high, low, close, timeperiod=20)
+data["atr_down"] = data["ma"] - 2*ta.ATR(high, low, close, timeperiod=20)
 data.dropna()
 
 data["direction"] = np.where(((data["Low"] < data["ma"]) & (data["High"] < data["ma"])), -1,
@@ -87,6 +87,8 @@ def onclick(event):
     return event.ydata
 
 count = 1
+
+data = data[101:]
 for index, row in data.iterrows():
     if count > 100 and count < (len(data) - 100):
         if row["consecutive"] == 0 and (row["previous_consecutive"]>=10 or row["previous_consecutive"]<=-10):
@@ -114,6 +116,9 @@ for index, row in data.iterrows():
             ax1.axvline(index, color='k', linestyle='-.')
 
             ema100 = ax1.plot(temp_data.index, temp_data["ma"])
+            atr_up = ax1.plot(temp_data.index, temp_data["atr_up"])
+            atr_down = ax1.plot(temp_data.index, temp_data["atr_down"])
+
             # sma30 = ax1.plot(temp_data.index, temp_data["sma30"])
             # sma50 = ax1.plot(temp_data.index, temp_data["sma50"])
 
